@@ -1,0 +1,39 @@
+.cardContainer {
+  padding: 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  transition: 150ms all linear;
+
+  &__cover {
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    padding: 8px 0;
+
+    span {
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+
+  &__description {
+    span {
+      color: gray;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .2);;
+  }
+}
